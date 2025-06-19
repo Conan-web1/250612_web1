@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력값태그</title>
+
+    <style>
+        .form_button {
+            background-color: #e5e5ec;
+            border: 1px solid #767676;
+            border-radius: 90px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #111111;
+        }
+
+        .form_button:hover {
+            background-color: #555555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <textarea name="개선방안" cols="50" rows="10"></textarea>
+
+    <select name="상품 선택" id="상품 선택" size="2" multiple>
+        <option value="build homepage">홈페이지제작</option>
+        <option value="add page">페이지추가</option>
+        <option value="brand story">브랜드스토리</option>
+        <option value="marketing">마케팅</option>
+        <option value="other">기타</option>
+    </select>
+
+    <form action="/submit">
+        <input type="text">
+        <input type="password">
+        <button class="form_button" type="reset">초기화</button>
+        <button class="form_button" type="submit">제출</button>
+    </form>
+
+    <form>
+
+        <label for="nametext">이름 : </label>
+        <input type="text" id="nametext">
+
+    </form>
+
+    <fieldset disabled>
+
+        <label for="nametext">이름 : </label>
+        <input type="text" id="nametext">
+        <br>
+        <label for="tel">연락처 : </label>
+        <input type="text" id="tel">
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>회원정보</legend>
+
+        <label for="address">주소 : </label>
+        <input type="text" id="address">
+        <br>
+        <label for="number">번호 : </label>
+        <input type="text" id="number">
+
+    </fieldset>
+
+</body>
+
+</html>
