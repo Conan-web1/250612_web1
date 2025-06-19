@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㅁㄴㅇㄹ</title>
+    <style>
+        .master_cover {
+            display: flex;
+            justify-content: center;
+        }
+
+        .maxwidth_cover {
+            max-width: 1280px;
+        }
+
+        .form_title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111111;
+        }
+
+        .form_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .form_grid input {
+            width: 520px;
+            display: flex;
+            align-items: center;
+            background-color: #e5e5ec;
+            border: none;
+            border-radius: 24px;
+            font-size: 32px;
+            color: #767676;
+            padding: 40px 40px;
+        }
+
+        .form_optionbox {
+            display: flex;
+            width: 1220px;
+            border: 1px solid #e5e5ec;
+            padding: 20px 20px;
+            border-radius: 24px;
+            background-color: #f2f5f7;
+            gap: 40px;
+        }
+
+        .form_optionbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .form_optionbox label {
+            color: #767676;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .form_optionbox2 {
+            display: flex;
+            width: 1220px;
+            border: 1px solid #e5e5ec;
+            padding: 20px 20px;
+            border-radius: 24px;
+            background-color: #f2f5f7;
+            gap: 40px;
+        }
+
+        .form_optionbox2 input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .form_optionbox2 label {
+            color: #767676;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="master_cover">
+        <section class="maxwidth_cover">
+            <h2 class="form_title">고객님을 소개해주세요.</h2>
+
+            <form class="form_grid">
+                <input type="text" placeholder="회사명">
+                <input type="text" placeholder="직급">
+                <input type="text" placeholder="담당자">
+                <input type="text" placeholder="연락처">
+                <input type="text" placeholder="이메일">
+                <input type="text" placeholder="홈페이지주소">
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <div class="master_cover">
+        <section class="maxwidth_cover">
+            <h2 class="form_title">상담 방식을 선택해주세요.</h2>
+
+            <div class="form_optionbox">
+                <label><input type="checkbox" />전화</label>
+                <label><input type="checkbox" />이메일</label>
+                <label><input type="checkbox" />방문</label>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="master_cover">
+
+        <section class="maxwidth_cover">
+            <h2 class="form_title">저희를 어떤 경로로 알게 되셨나요?</h2>
+
+            <div class="form_optionbox2">
+                <label><input type="radio" name="어디" required>네이버</label>
+                <label><input type="radio" name="어디" required>유튜브</label>
+                <label><input type="radio" name="어디" required>인스타</label>
+                <label><input type="radio" name="어디" required>다른곳</label>
+                <label><input type="radio" name="어디" required>기사</label>
+                <label><input type="radio" name="어디" required>소개</label>
+                <label><input type="radio" name="어디" required>기타</label>
+
+            </div>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
