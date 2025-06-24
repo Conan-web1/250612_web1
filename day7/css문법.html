@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <link rel="stylesheet" href="./css문법.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #id_select {
+            background-color: #767676;
+        }
+
+        p>.hi {
+            color: #a5a5a5;
+        }
+
+        article>div>.hi {
+            color: #f2f5f7;
+        }
+
+        article .h1 {
+            background-color: #6868ff
+        }
+
+        .front_end_languege + li {
+            background-color: #110077;
+            color: #ffffff;
+        }
+
+        .p_tag, #span_tag, h3 {
+            font-size:120px;
+            background-color:#ffff60;
+        }
+
+        .p_tag, #span_tag, h3:hover {
+            color: #a5a5a5;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 class="title_1">클래스문법실습</h1>
+
+    <!-- 내용아무거나 -->
+
+    <h2 id="id_select">아이디 선택자</h2>
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li class="front_end_languege">javascript</li>
+        <li>react</li>
+        <li>vue</li>
+        <li>vue</li>
+        <li>vue</li>
+        <li>vue</li>
+        <li>vue</li>
+    </ul>
+
+    <p>
+        i do write somethin like this
+        part of them i want to change color
+        <span class="hi">this part</span>
+    </p>
+    <article>
+        <div>i do write somethin like this
+            part of them i want to change color
+            <span class="hi">this part</span>
+        </div>
+    </article>
+
+    <article>
+        <div>i do write somethin like this
+            part of them i want to change color
+            <span class="hi">this part</span>
+        </div>
+    </article>
+
+    <div>
+        <p class="p_tag">이건 p태그 입니다.</p>
+        <h3>헤드3입니다</h3>
+        <span id="span_tag">spantag입니다</span>
+    </div>
+
+</body>
+
+</html>
