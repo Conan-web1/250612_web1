@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트스타일</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        /* @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        } */
+        .ibm-plex-sans-kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: 'IBM Plex Sans KR';
+}
+
+        h1 {
+            color: #505050;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        /* span {
+            display: block;
+        } */
+
+        .text_align_left {
+            text-align: left;
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .vertical_container>p {
+            font-size: 48px;
+        }
+
+        .vertical_1>span {
+            font-size: 16px;
+            vertical-align: top;
+        }
+
+        .vertical_2 span {
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+        .vertical_3 span {
+            font-size: 16px;
+            vertical-align: bottom;
+        }
+
+        .vertical_1 {
+            text-decoration: underline;
+        }
+
+        .vertical_2 {
+            text-decoration: line-through;
+        }
+
+        .vertical_3 {
+            text-decoration: overline;
+        }
+
+        .line_height1 {
+            font-size: 40px;
+            line-height: 1.5;
+        }
+
+        .line_height2 {
+            font-size: 40px;
+            line-height: 200%;
+        }
+
+        .line_height3 {
+            font-family: 'Pretendard-Regular';
+            font-size: 40px;
+            line-height: 0em;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>텍스트스타일</h1>
+    <div class="text_align_left">왼쪽으로 가겟습니다</div>
+    <div class="text_align_center">저는 가운데로 가겠습니다</div>
+    <div class="text_align_right">저는 오른쪽입니다.</div>
+
+    <div>
+        <span class="text_align_left">왼쪽으로 가겟습니다</span>
+        <span class="text_align_center">저는 가운데로 가겠습니다</span>
+        <span class="text_align_right">저는 오른쪽입니다</span>
+    </div>
+
+    <div style="margin: 100px;">asdf</div>
+
+    <div class="vertical_container">
+
+        <p class="vertical_1">
+            서브테스트 맨위로 올것입니다
+            <span>섭텍</span>
+        </p>
+
+        <p class="vertical_2">
+            서브테스트 가운데로 올것입니다
+            <span>섭텍</span>
+        </p>
+
+        <p class="vertical_3">
+            서브테스트 아래로 올것입니다
+            <span>섭텍</span>
+        </p>
+    </div>
+
+    <p class="line_height1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum libero eligendi fuga
+        explicabo enim consectetur quaerat voluptatum sit beatae laborum consequatur, facere minima sunt. Cupiditate
+        tempore laboriosam quae porro.</p>
+    <p class="line_height2">line-height 실습</p>
+    <p class="line_height3">line-height 실습</p>
+
+</body>
+
+</html>
