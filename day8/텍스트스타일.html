@@ -17,15 +17,26 @@
             font-weight: 400;
             font-style: normal;
         } */
-        .ibm-plex-sans-kr-regular {
+
+
+        /* .ibm-plex-sans-kr-regular {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
-  font-style: normal;
-}
+  font-style: normal; */
 
-body {
-    font-family: 'IBM Plex Sans KR';
-}
+        @font-face {
+            font-family: 'Tokki font';
+            src: url('./HSSanTokki2.0\(2024\).ttf');
+        }
+
+        body {
+            font-family: 'Tokki font';
+        }
+
+
+        /* body {
+            font-family: 'IBM Plex Sans KR';
+        } */
 
         h1 {
             color: #505050;
@@ -95,6 +106,14 @@ body {
             font-size: 40px;
             line-height: 0em;
         }
+
+        .letter-spacing_1 {
+            letter-spacing: -10px;
+        }
+
+        .letter-spacing_2 {
+            letter-spacing: -5px;
+        }
     </style>
 </head>
 
@@ -137,6 +156,10 @@ body {
         tempore laboriosam quae porro.</p>
     <p class="line_height2">line-height 실습</p>
     <p class="line_height3">line-height 실습</p>
+
+    
+<p class="letter-spacing_1">자간을설정합니다.</p>
+<p class="letter-spacing_2">자간을설정합니다.</p>
 
 </body>
 

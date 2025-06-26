@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+
+    <style>
+
+        body {
+            height: 5000px;
+        }
+        
+        .container {
+            position: relative;
+            width: 1000px;
+            border: 1px solid #333333;
+            margin: 50px;
+            height: 500px;
+        }
+
+        .box {
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+        }
+
+        .b1 {
+            background-color: #505050;
+        }
+
+        .b2 {
+            background-color: #767676;
+            top: 50%;
+            left: 50%;
+            /* position:absolute 속성을 부여한 후에만 적용된다. */
+            transform: translate(-50%, -50%);
+        }
+
+        .b3 {
+            background-color: #c1c1c1;
+            right: 0;
+            bottom: 0;
+        }
+
+        .p1 {
+            position: absolute;
+        }
+
+        .top_btn {
+            width: 100px;
+            height: 100px;
+            background-color: #ffff60;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 16px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #6868ff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="top">
+
+        <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti autem saepe aperiam voluptatem libero
+            dolor, aliquam dolores est. Dolore, ipsa. Aspernatur pariatur suscipit consectetur neque voluptatibus atque
+            dolores incidunt eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti autem saepe aperiam voluptatem libero
+            dolor, aliquam dolores est. Dolore, ipsa. Aspernatur pariatur suscipit consectetur neque voluptatibus atque
+            dolores incidunt eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti autem saepe aperiam voluptatem libero
+            dolor, aliquam dolores est. Dolore, ipsa. Aspernatur pariatur suscipit consectetur neque voluptatibus atque
+            dolores incidunt eum?
+        </p>
+
+        <div class="box b1">왼쪽위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽아래</div>
+    </div>
+
+    <div class="top_btn">
+        <a href="#top">TOP</a>
+    </div>
+
+</body>
+
+</html>
