@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세로정렬</title>
+
+    <style>
+
+        article {
+
+            display: flex;
+            border: 1px solid #333333;
+            margin: 10px;
+            width: 100%;
+            height: 800px;
+            
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #a5a5a5;
+            margin: 5px;
+        }
+
+        .flex_start {
+            align-items: flex-start;
+        }
+
+        .flex_end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .flex_baseline {
+            align-items: flex-end;
+        }
+        
+        
+        .baseline {
+            font-size: 100px;
+            width: 500px;
+            height: 500px;
+        }
+
+        .baseline + div {
+            font-size: 24px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .stretch > div {
+            width: auto;
+            height: auto;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="align_container">
+
+        <article class="flex_start">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+
+        <article class="flex_end">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+
+        <article class="center">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+
+        <article class="flex_baseline">
+            <div>item</div>
+            <div class="flex_baseline">item</div>
+            <div>item</div>
+        </article>
+
+        <article class="stretch">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+
+    </div>
+
+</body>
+
+</html>
