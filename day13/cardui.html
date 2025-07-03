@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            width: 300px;
+            height: 420px;
+            border-radius: 32px;
+            background-image: url(barca.webp);
+            background-size: cover;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(17, 17, 17, 0.2);
+        }
+
+        .button {
+            width: 80px;
+            height: 20px;
+            padding: 12px 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin: 32px;
+        }
+        
+        .title1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 32px;
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #111111;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        a:hover {
+            color: #767676;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>바르셀로나 카드</h1>
+
+    <div class="container">
+
+        <div class="box"><h2 class="title1">바르셀로나</h2>
+            <a class="button" href="#">둘러보기</a>
+        </div>
+        <div class="box"><h2 class="title1">바르셀로나</h2>
+            <a class="button" href="#">둘러보기</a>
+        </div>
+        <div class="box"><h2 class="title1">바르셀로나</h2>
+            <a class="button" href="#">둘러보기</a>
+        </div>
+        <div class="box"><h2 class="title1">바르셀로나</h2>
+            <a class="button" href="#">둘러보기</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>
