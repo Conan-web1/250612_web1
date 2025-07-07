@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width: 1280px;
+            height: 400px;
+            gap: 20px;
+        }
+
+        article {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.otoki.com/images/common/main_esg2.jpg');
+            background-size: cover;
+            border-radius: 32px;
+        }
+
+        .content_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .desc {
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        section:hover article {
+            flex: 1;
+        }
+
+        article:hover {
+            flex: 3;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <article>
+            <div class="content_box">
+                <h2>
+                    안녕1
+                </h2>
+                <p class="desc">
+                    너는너는
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="content_box">
+                <h2>
+                    안녕2
+                </h2>
+                <p class="desc">
+                    모두모두
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="content_box">
+                <h2>
+                    안녕3
+                </h2>
+                <p class="desc">
+                    나는나는
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+</body>
+
+</html>
