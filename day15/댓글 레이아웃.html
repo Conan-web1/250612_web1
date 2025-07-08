@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/9bc17173c2.js" crossorigin="anonymous"></script>
+
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .comment_container {
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+        }
+
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        .basis {
+            flex-basis: 90%;
+        }
+
+        h2,
+        .comment_content {
+            font-size: 12px;
+        }
+
+        .icon_box {
+            display: flex;
+            margin: 16px 0;
+            align-items: center;
+        }
+
+        .icon_box > div:nth-child(1),
+        .icon_box > div:nth-child(2),
+        .icon_box > figure {
+            margin-right: 16px;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .icon_box > figure > img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon_box > p {
+            font-size: 12px;
+            padding: 8px 10px;
+            border-radius: 24px;
+            transition: 0.3s;
+        }
+
+        .icon_box > p:hover {
+            background: #505050;
+            color: #ffffff;
+        }
+
+        .recomment_box > button {
+            color: #2e50e2;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <article class="comment_container">
+
+        <figure>
+            <img src="https://ncryk7.mycafe24.com/tiger3.jpg" alt="프로필사진">
+        </figure>
+
+        <div class="basis">
+            <h2>
+                @harmonin-m7z
+            </h2>
+
+            <p class="comment_content">
+                ㄹㅇㅋㅋ 개쩐다
+            </p>
+
+            <div class="icon_box">
+
+                <div>
+                    <button>
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                        <!-- 좋아요 아이콘 늫으즈스으 -->
+                        <span>5</span>
+                    </button>
+                </div>
+
+                <div>
+                    <button>
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                        <!-- 싫어요 아이콘 늫으즈스으 -->
+                    </button>
+                </div>
+
+                <figure>
+                    <img src="https://ncryk7.mycafe24.com/tiger2.jpg" alt="">
+                </figure>
+
+                <p>답글</p>
+
+            </div>
+
+            <div class="recomment_box">
+                <button>
+                    <i class="fa-regular fa-chevron-down fa-xl"></i>
+                    <!-- 꺽쇄아이콘들어갈거에요 -->
+                    <span>
+                        답글 1개
+                    </span>
+
+                </button>
+            </div>
+
+        </div>
+
+        <div>
+            <button>
+                <i class="fa-light fa-ellipsis-vertical fa-xl"></i>
+                <!-- 엘립스버티컬 아이콘 -->
+            </button>
+        </div>
+
+    </article>
+
+</body>
+
+</html>
