@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: #6868ff;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 32px 0;
+            gap: 60px;
+        }
+
+        ul > li {
+            
+        }
+
+        .btn {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 300;
+            padding: 16px 20px;
+            position: relative;
+            border: 1px solid transparent;
+        }
+
+        .btn::before {
+            content: "";
+            display: block;
+            background-color: #ffffff;
+            height: 1px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0%;
+            transition: 0.3s;
+        }
+
+        .btn::after {
+            content: "";
+            display: block;
+            background-color: #ffffff;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            transition: 0.3s;
+        }
+
+        .btn:hover::after,
+        .btn:hover::before {
+            width:100%;
+        }
+
+        .btn:hover {
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <a href="#" class="btn">NOTHIN</a>
+        </li>
+
+        <li>
+            <a href="#" class="btn">NOTHIN</a>
+        </li>
+
+        <li>
+            <a href="#" class="btn">NOTHIN</a>
+        </li>
+
+        <li>
+            <a href="#" class="btn">NOTHIN</a>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 16px;
+        }
+
+        article {
+            border: 1px solid #767676;
+            margin: 50px;
+        }
+
+        .translate > div {
+            background: #6868ff;
+        }
+
+        .scale > div {
+            background: #110077;
+        }
+
+        .skew > div {
+            background: #a50000;
+        }
+
+        .rotate > div {
+            background: #a5a5a5;
+        }
+
+        .translateX {
+            transform: translateX(100%);
+        }
+
+        .translateY {
+            transform: translateY(-100%);
+        }
+
+        .translateA {
+            transform: translate(50px, 100%);
+        }
+
+        .scaleX {
+            transform: scaleX(1.5);
+        }
+
+        .scaleY {
+            transform: scaleY(0.2);
+        }
+
+        .scaleA {
+            transform: scale(0.1, 0.1);
+        }
+
+        .skewX {
+            transform: skewX(50deg);
+        }
+
+        .skewY {
+            transform: skewY(5deg);
+        }
+
+        .skewA {
+            transform: skew(100deg);
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <article class="translate">
+        <div class="translateX"></div>
+        <div class="translateY"></div>
+        <div class="translateA"></div>
+    </article>
+
+    <article class="scale">
+        <div class="scaleX"></div>
+        <div class="scaleY"></div>
+        <div class="scaleA"></div>
+    </article>
+
+    <article class="skew">
+        <div class="skewX"></div>
+        <div class="skewY"></div>
+        <div class="skewA"></div>
+    </article>
+
+    <article class="rotate_box">
+        <div class="rotate"></div>
+    </article>
+    
+</body>
+</html>
